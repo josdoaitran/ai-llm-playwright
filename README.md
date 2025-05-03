@@ -15,3 +15,16 @@
 - Playwright-Powered: Under the hood, it uses Microsoft’s Playwright for robust browser automation.
 - LLM-Driven: Every decision — what to click, what to read, where to go next -— is powered by an AI model like GPT-4.
 - Visual + DOM Understanding: It sees both the code (DOM) and the visual layout (via screenshots), allowing it to identify elements humans would recognize — not just IDs and class names.
+
+# Setup Python environment for our Side-Project
+```
+# Set up virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install required packages
+pip install playwright playwright-python openai langchain
+# or 
+pip install -r requirements.txt
+playwright install  # Install browser binaries
+```
