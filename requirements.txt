@@ -1,4 +1,4 @@
 playwright
 playwright-python 
-openai 
-langchai
+browser-use 
+browser-use[memory]

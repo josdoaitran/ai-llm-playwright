@@ -5,6 +5,7 @@
 ## Browser-Use ?
 - Browser-Use library: where Playwright meets GPT and the browser becomes an AI playground. Browser Use is as an open-source Python library that wraps Playwright in AI smarts and gives LLMs the keys to your browser.
 - [![](https://browser-use.com/logo.svg) Browser-use](https://browser-use.com/)
+- 
 
 ## Problems and Ideal Solutions
 - Web Automation Test problems and challenges: Flakiness.
@@ -23,8 +24,15 @@ python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install required packages
-pip install playwright playwright-python openai langchain
+pip install playwright playwright-python browser-use browser-use[memory]
 # or 
 pip install -r requirements.txt
 playwright install  # Install browser binaries
 ```
+# Browser-use has to have LLM
+It can work out of the box with:
+- OpenAI GPT-3.5 / GPT-4
+- Anthropic Claude
+- Azure OpenAI
+- Google Gemini
+- Local models via Ollama or others
